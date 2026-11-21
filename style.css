@@ -291,7 +291,17 @@ th {
 }
 
 .cal {
-    min-height: 300px
+  background: var(--sf);
+  border: 1px solid var(--ln);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(14,35,71,.12);
+}
+.cal iframe {
+  display: block;
+  width: 100%;
+  height: clamp(420px, 75vh, 600px);
+  border: 0;
 }
 
 .gal {

@@ -59,7 +59,7 @@ $('#f').addEventListener('submit', async e => {
     const m = `สนใจจอง: ${f.get('sv')}\nชื่อ: ${f.get('fn')} ${f.get('ln')}\nติดต่อ: ${f.get('ph')}\nวันที่: ${f.get('dt')}\nจำนวน: ${f.get('gs')} คน\n${f.get('ms')}`;
     try { await navigator.clipboard.writeText(m) } catch (_) { }
     $('#fm').textContent = 'คัดลอกข้อความแล้ว วางในแชทแล้วกดส่ง';
-    window.open(c == 'line' ? 'https://line.me/ti/p/@seasondive' : 'https://wa.me/66881944215?text=' + encodeURIComponent(m), '_blank')
+    window.open(c == 'line' ? 'https://line.me/ti/p/16HUVtR5rw' : '' + encodeURIComponent(m), '_blank')
 });
 const bg = $('.bg'), nv = $('#nav'), sh = o => {
     nv.classList.toggle('open', o);
